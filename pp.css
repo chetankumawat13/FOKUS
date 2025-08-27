@@ -1,0 +1,795 @@
+@font-face {
+    font-family: fks1;
+    src: url(./asists/fonts/fks.woff2);
+}
+@font-face {
+    font-family: fks2;
+    src: url(./asists/fonts/fks2.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    overflow-x: hidden;
+    background-color: #F5F5DC;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    padding: 2vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    z-index: 99;
+}
+
+.n1{
+    display: flex;
+    gap: 2vw;
+}
+
+.n1 a{
+    text-decoration: none;
+    color: black;
+    font-family: fks1;
+    font-size: 1.1vw;
+}
+.n1 i{
+    display: none;
+}
+
+.n2{
+    display: flex;
+    align-items: center;
+ 
+}
+.n2 img{
+    width: 50%;
+}
+
+.n3{
+    display: flex;
+    gap: 2vw;
+}
+
+
+.n3 a{
+    text-decoration: none;
+    padding: 0.5vw 0;
+}
+.n3 a i{
+    font-size: 2vw;
+    color: black;
+    font-family: fks1;
+    font-family: 100;
+}
+.ri-shopping-cart-2-line{
+    font-size: 2vw;
+    color: black;
+    font-family: fks1;
+    font-family: 100;
+    padding: 0.5vw 0;
+    cursor: pointer;
+}
+.n3 a:nth-child(3){
+    text-decoration: none;
+    color: #ffffff;
+    font-family: fks1;
+    font-size: 1.1vw;
+    background-color: black;
+    padding: 0.6vw 1vw;
+    border-radius: 10px;
+}
+
+
+#page1{
+    padding-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 8vw;
+    min-height: 100vh;
+    width: 100%;
+}
+.p1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p1 h1{
+    font-size: 3vw;
+    font-family: fks1;
+    font-weight: 500;
+}
+
+.p2{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.p2 h4{
+    -webkit-text-stroke: 0.2px black; 
+    font-family: fks1;
+    font-size: 1.2vw;
+}
+
+.p2 p{
+    font-family: fks1;
+    font-size: 1vw;
+}
+
+
+
+
+/* bottom */
+
+#botom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3vw;
+    height: 40vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.b1{
+    gap: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#b1l{
+    width: 50%;
+}
+
+#b1h4{
+    font-size: 1vw;
+    font-family: fks1;
+}
+
+.b2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.b2 a{
+    font-size: 1.1vw;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-family: fks1;
+    transition: all ease 0.2s;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.b3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.b3 a{
+    font-size: 1.1vw;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-family: fks1;
+    transition: all ease 0.2s;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.b4{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.b4i{
+    display: flex;
+    gap: 1vw;
+}
+
+.b4i a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding: 0.5vw;
+    border-radius: 50%;
+    background-color: black;
+    backdrop-filter: 20px;
+    font-size: 1.4vw;
+    transition: all ease 0.5s;
+    border: 1px solid black;
+    &:hover{
+        scale:0.9;
+        color: black;
+        background-color: #FFFFFF;
+    }
+}
+
+#pp{
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: black;
+    font-family: fks1;
+    transition: all ease 0.2s;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+#over.active {
+    right: 0;
+  }
+#over{
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 10vw;
+    position: fixed;
+    gap: 2vw;
+    top: 0;
+    right: 440px;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5DC;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 10000000;
+    display: none;
+}
+#over1{
+    font-size: 9vw;
+    margin-bottom: 3vw;
+    margin-top: 5vw;
+}
+#over a{
+    text-decoration: none;
+    color: black;
+    font-family: fks1;
+    font-size: 5vw;
+}
+#over #a{
+    font-size: 4vw;
+    margin-top: 5vw;
+}
+#over #b{
+    font-size: 4vw;
+}
+#overlay{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 99999;
+    display: none;
+}
+
+#overlay.active {
+    display: block;
+}
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+.atc.active {
+    right: 0;
+  }
+.atc{
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 45%;
+  height: 100%;
+  background-color: #F5F5DC;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+  transition: right 0.3s ease-in-out;
+  z-index: 10000000;
+}
+.atc1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.atc1h1{
+    margin-bottom: 0.5vw;
+    font-family: fks1;
+    font-size: 2vw;
+}
+.atc1 i{
+    font-size: 2vw;
+    cursor: pointer;
+}
+.atc2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+#atci{
+    height: 15vw;
+    width: 15vw;
+    border: 2px solid black;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.atct a{
+    text-decoration: none;
+    color: black;
+    font-family: fks1;
+    font-size: 1.2vw;
+}
+.atct h4{
+    font-family: fks1;
+    font-size: 0.9vw;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+.addm{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    gap: 2vw;
+    border: 1.5px solid black;
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+}
+.addm i{
+    font-size: 1.2vw;
+    font-family: fks1;
+    cursor: pointer;
+}
+.rxn{
+    font-size: 1.2vw;
+    font-family: fks1;
+}
+.atct{
+    width: 37%;
+}
+.atct2{
+    width: 18%;
+    font-family: fks1;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.1vw;
+}
+
+.atc3{
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+    align-items: center;
+    margin-top: 15vw;
+}
+
+#atch1{
+    font-family: fks1;
+    font-size: 1.2vw;
+}
+
+#atch2{
+    font-family: fks1;
+    font-size: 1.1vw;
+}
+#atch3{
+    font-family: fks1;
+    font-size: 0.9vw;
+    opacity: 0.7;
+}
+
+.atc4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vw;
+}
+.atc4 a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.8vw 15vw;
+    border-radius: 10px;
+    font-family: fks1;
+    border: 1px solid black;
+    transition: all ease 0.5s;
+    &:hover{
+        background-color: #D5E789;
+        color: black;
+    }
+}
+@media (max-width: 700px) {
+    .nav{
+        position: fixed;
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        padding: 2vw;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFFFFF;
+        z-index: 99;
+    }
+    .n1{
+        width: 33%;
+        display: flex;
+        gap: 2vw;
+    }
+    .n1 i{
+        margin-left: 2vw;
+        display: block;
+        font-size: 7vw;
+        font-weight: 300;
+    }
+    
+    .n1 a{
+        display: none;
+    }
+    
+    .n2{
+        width: 33%;
+        justify-content: center;
+    }
+    .n2 img{
+        width: 80%;
+    }
+    
+    .n3{
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+       
+    }
+    .n3 a{
+        display: none;
+    }
+
+    .n3 a i{
+        font-size: 7vw;
+        font-weight: 300;
+    }
+    .n3 a:nth-child(2){
+        display: block;
+        margin-right: 2vw;
+    }
+
+    #page1{
+        padding-bottom: 8vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+        margin-top: 20vw;
+        min-height: 100vw;
+        width: 100%;
+    }
+    .p1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid black;
+    }
+    .p1 h1{
+        font-size: 10vw;
+        font-family: fks1;
+        font-weight: 300;
+    }
+    
+    .p2{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        padding: 4vw;
+    }
+    .p2 h4{
+        -webkit-text-stroke: 0.2px black; 
+        font-family: fks1;
+        font-size: 5vw;
+    }
+    
+    .p2 p{
+        font-family: fks1;
+        font-size: 3vw;
+    }
+    #botom{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top: 0;
+        height: 40vh;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    
+    .b1{
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #b1l{
+        width: 50%;
+        margin-left: 24%;
+    }
+    
+    #b1h4{
+        font-size: 3.5vw;
+        font-family: fks1;
+    }
+    
+    .b2{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 4vw;
+       
+    }
+    
+    .b2 a{
+        font-size: 3vw;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-family: fks1;
+        transition: all ease 0.2s;
+        border-bottom: 1px solid black;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
+    .b3{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 3vw;
+    }
+    
+    .b3 a{
+        font-size: 3vw;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-family: fks1;
+        border-bottom: 1px solid black;
+        transition: all ease 0.2s;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
+    .b4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+    }
+    
+    .b4i{
+        display: flex;   
+        gap: 3vw;
+    }
+    
+    .b4i a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        padding: 0.5vw;
+        border-radius: 50%;
+        background-color: black;
+        backdrop-filter: 20px;
+        font-size: 4vw;
+        transition: all ease 0.5s;
+        border: 1px solid black;
+        &:hover{
+            scale:0.9;
+            color: black;
+            background-color: #FFFFFF;
+        }
+    }
+    
+    #pp{
+        font-size: 3vw;
+        text-decoration: none;
+        color: black;
+        font-family: fks1;
+        transition: all ease 0.2s;
+        border-bottom: 1px solid black;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    #over{
+        display: flex;
+    }
+    #overlay.active {
+        display: block;
+    }
+    html.no-scroll,
+    body.no-scroll {
+      overflow: hidden;
+      height: 100vh;
+    }
+    .atc.active {
+        right: 0;
+      }
+    .atc{
+      display: flex;
+      flex-direction: column;
+      padding: 5vw;
+      position: fixed;
+      top: 0;
+      right: -400px;
+      width: 90%;
+      height: 100%;
+      background-color: #F5F5DC;
+      box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+      transition: right 0.3s ease-in-out;
+      z-index: 10000000;
+    }
+    .atc1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+    .atc1h1{
+        margin-bottom: 0.5vw;
+        font-family: fks1;
+        font-size: 7vw;
+    }
+    .atc1 i{
+        font-size: 7vw;
+        cursor: pointer;
+    }
+    .atc2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vw;
+        margin-top: 4vw;
+    }
+    #atci{
+        height: 40vw;
+        width: 35vw;
+        border: 2px solid black;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    .atct a{
+        text-decoration: none;
+        color: black;
+        font-family: fks1;
+        font-size: 5vw;
+    }
+    .atct a br{
+        display: none;
+    }
+    .atct h4{
+        font-family: fks1;
+        font-size: 3.5vw;
+        text-transform: lowercase;
+        cursor: pointer;
+    }
+    .addm{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
+        gap: 8vw;
+        border: 1.5px solid black;
+        padding: 0.5vw 1vw;
+        border-radius: 5px;
+    }
+    .addm i{
+        font-size: 6vw;
+        font-family: fks1;
+        cursor: pointer;
+    }
+    .rxn{
+        font-size: 6vw;
+        font-family: fks1;
+    }
+    .atct{
+        width: 100%;
+    }
+    .atct2{
+        width: 100%;
+        font-family: fks1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        font-size: 4vw;
+        display: none;
+    }
+    
+    .atc3{
+        display: flex;
+        justify-content: space-between;
+        text-align: end;
+        align-items: center;
+        margin-top: 15vw;
+    }
+    
+    #atch1{
+        font-family: fks1;
+        font-size: 3vw;
+    }
+    
+    #atch2{
+        font-family: fks1;
+        font-size: 3vw;
+    }
+    #atch3{
+        font-family: fks1;
+        font-size: 2vw;
+        opacity: 0.7;
+    }
+    
+    .atc4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8vw;
+    }
+    .atc4 a{
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 0.8vw 25vw;
+        border-radius: 10px;
+        font-family: fks1;
+        border: 1px solid black;
+        transition: all ease 0.5s;
+        &:hover{
+            background-color: #D5E789;
+            color: black;
+        }
+    }
+    #overlay{
+        position: fixed;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        z-index: 99999;
+        display: none;
+    }
+    .ri-shopping-cart-2-line{
+        font-size: 7vw;
+        font-weight: 300;
+        margin-right: 2vw;
+    }
+}
