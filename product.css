@@ -317,7 +317,7 @@ html,body{
     cursor: pointer;
     transition: all ease 0.3s;
     &:hover{
-        scale: 1;
+        scale: 0.9;
     }
 }
 
@@ -349,7 +349,7 @@ html,body{
     cursor: pointer;
     transition: all ease 0.3s;
     &:hover{
-        scale: 1;
+        scale: 0.9;
     }
 
 }
@@ -1161,7 +1161,7 @@ body.no-scroll {
         cursor: pointer;
         transition: all ease 0.3s;
         &:hover{
-            scale: 0.9;
+            scale: 1;
         }
     }
     #p1r4- i{
@@ -1190,7 +1190,7 @@ body.no-scroll {
         cursor: pointer;
         transition: all ease 0.3s;
         &:hover{
-            scale: 0.9;
+            scale: 1;
         }
     }
     
@@ -1223,7 +1223,7 @@ body.no-scroll {
         cursor: pointer;
         transition: all ease 0.3s;
         &:hover{
-            scale: 0.9;
+            scale: 1;
         }
     
     }
