@@ -317,7 +317,7 @@ html,body{
     cursor: pointer;
     transition: all ease 0.3s;
     &:hover{
-        scale: 0.9;
+        scale: 1;
     }
 }
 
@@ -349,7 +349,7 @@ html,body{
     cursor: pointer;
     transition: all ease 0.3s;
     &:hover{
-        scale: 0.9;
+        scale: 1;
     }
 
 }

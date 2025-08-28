@@ -448,7 +448,7 @@ sidebar.addEventListener("click", (e) => {
   });
 overlay.addEventListener("click", closeSidebar);
 closer.addEventListener("click", closeSidebar);
-rm.addEventListener("click",closeSidebar)
+rm.addEventListener("click",closeSidebar);
 
 function closeSidebar() {
   sidebar.classList.remove("active");
